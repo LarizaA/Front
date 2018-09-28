@@ -186,6 +186,7 @@ console.log("El elemento " + (n+1) + " de la serie es " + f[n])
 }
 
 
+
 //EJERCICIO FIBONACCI CON VARIABLES:
 function Fibonacci2(){
 
