@@ -162,3 +162,66 @@ let jugador2 = prompt("¿Piedra papel o tijera?");
   }
 }
 }
+
+
+//EJERCICIO FIBONACCI ARRAY:
+function Fibonacci(){
+
+  let numero = Number(prompt("Ingresa el nùmero final"));
+  let f = []; //array
+  for (var n = 0; n <= numero; n++) {
+
+    if (n == 0) {
+      f[n] = 0;
+    }
+    if (n == 1) {
+      f[n] = 1;
+    }
+    if (n > 1) {
+      f[n] = f[n-1] + f[n-2];
+    }
+
+console.log("El elemento " + (n+1) + " de la serie es " + f[n])
+  }
+}
+
+
+//EJERCICIO FIBONACCI CON VARIABLES:
+function Fibonacci2(){
+
+  let numero = Number(prompt("Ingresa el número final"));
+  let f0 = 0;
+  let f1 = 1;
+  let f;
+
+  for (var n = 0; n <= numero; n++) {
+    if (n == 0) {
+      console.log("El elemento 1 de la serie es: 0");
+    }
+    if (n == 1) {
+      console.log("El elemento 2 de la serie es: 1");
+    }
+    if (n > 1 ){
+      f = f1 + f0;
+      console.log("El elemento " + n + " de la serie es: " + f);
+      f0 = f1;
+      f1 = f;
+    }
+
+
+  }
+
+
+
+
+
+}
+
+
+
+
+
+//for es para contar de 0 hasta "x" número
+// if es para pregunntar "si" "tal es mayor o menor o == que tal"
+// {} son un "entonces"
+// array contiene varios elementos
